@@ -1,6 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+@import "teams"
 
 ::placeholder
 	color: #666
@@ -17,6 +18,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	background-color: #fff
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -25,12 +27,19 @@ body
 		&:required:valid
 			border-color: green
 
+h1, h2, h3
+	font-family: montserrat-black
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 	&.img-width
 		width: 100%
+
+.rounded
+    border-radius: .25rem!important
+
 
 .text-center
 	text-align: center
