@@ -117,3 +117,54 @@ section#project-4
             line-height: 28px
             text-transform: uppercase
             letter-spacing: 1.2px
+
+section#project-5
+    .container-fluid
+        padding-right: 0
+        padding-left: 0
+        .wrap-projects
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            align-content: flex-start
+            width: 100%
+            article.project-item
+                padding: 0
+                flex: 0 1 auto
+                opacity: 0.3
+                &:hover
+                    opacity: 1
+                figure
+                    position: relative
+                    margin: 0 
+                    .img-responsive
+                        width: 100%
+                    figcaption
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: -1px
+                        text-align: center
+                        z-index: 10
+                        opacity: 0
+                        border: 1px solid transparent
+                        backface-visibility: hidden
+                        transition: all .3s
+                        bottom: 0px !important
+                        .actions
+                            margin-top: 30%
+                            cursor: pointer
+                            text-transform: uppercase
+                            color: #ffffff
+                            font-size: 14px
+                            font-weight: 300
+                            line-height: 24px
+                            letter-spacing: 1.4px
+                        &:hover
+                            opacity: 1
+                            transition: all .25s ease-out
+                    &:hover img
+                        transform-origin: 50% 50%
+                        transition: 1.25s ease-out
+                    
