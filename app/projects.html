@@ -85,38 +85,40 @@
                 <div class="section-menu">
                     <div class="row">
                         <div class="col-md-12">
-                            <ul>
-                                <li class="filter"><a href="#" class="selected" data-type="all">All</a></li>
-                                <li class="filter" data-filter=".option-1"><a href="#0" data-type="option-1">Development</a></li>
-                                <li class="filter" data-filter=".option-2"><a href="#0" class="active" data-type="option-2">Branding</a></li>
-                                <li class="filter" data-filter=".option-3"><a href="#0" data-type="option-3">Graphic design</a></li>
-                                <li class="filter" data-filter=".option-4"><a href="#0" data-type="option-4">UI design</a></li>
-                                <li class="filter" data-filter=".option-5"><a href="#0" data-type="option-5">Mobile design</a></li>
-                            </ul>   
+                            <div class="controls">
+                                <button type="button" class="filter" data-filter="all">All</button>
+                                <button type="button" class="filter" data-filter=".option-1">Development</button>
+                                <button type="button" class="filter" data-filter=".option-2">Branding</button>
+                                <button type="button" class="filter" data-filter=".option-3">Graphic design</button>
+                                <button type="button" class="filter" data-filter=".option-4">UI design</button>
+                                <button type="button" class="filter" data-filter=".option-5">Mobile design</button>
+                            </div>
                         </div>
                     </div>
                 </div>  
         
                 <div class="row">
-                    <div class="col-md-6 col-xs-12 project-item mix option-1">
-                        <img src="img/projects/project-2/project-1.png" class="img-responsive" alt="">
-                        <h4 class="project-name">Trade In Landing Page</h4>
-                        <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 project-item  mix option-2">
-                        <img src="img/projects/project-2/project-2.png" class="img-responsive" alt="">
-                        <h4 class="project-name">Spartan UI Kit</h4>
-                        <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 project-item  mix option-3">
-                        <img src="img/projects/project-2/project-3.png" class="img-responsive" alt="">
-                        <h4 class="project-name">Trade In Landing Page</h4>
-                        <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 project-item  mix option-4">
-                        <img src="img/projects/project-2/project-4.jpg" class="img-responsive" alt="">
-                        <h4 class="project-name">Spartan UI Kit</h4>
-                        <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                    <div class="project-wrap">
+                        <div class="col-md-6 col-xs-12 project-item mix option-1">
+                            <img src="img/projects/project-2/project-1.png" class="img-responsive" alt="">
+                            <h4 class="project-name">Trade In Landing Page</h4>
+                            <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 project-item  mix option-4">
+                            <img src="img/projects/project-2/project-2.png" class="img-responsive" alt="">
+                            <h4 class="project-name">Spartan UI Kit</h4>
+                            <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 project-item  mix option-2">
+                            <img src="img/projects/project-2/project-3.png" class="img-responsive" alt="">
+                            <h4 class="project-name">Trade In Landing Page</h4>
+                            <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 project-item  mix option-3">
+                            <img src="img/projects/project-2/project-4.jpg" class="img-responsive" alt="">
+                            <h4 class="project-name">Spartan UI Kit</h4>
+                            <p class="project-description">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                        </div>
                     </div>
                 </div>
         
@@ -125,8 +127,12 @@
 
     </div>
 
-    <script src="libs/mixitup/dist/mixitup.js"></script>
+     
+    <script src="js/scripts.min.js"></script>
 
-
+<script>
+    var containerEl = document.querySelector('.project-wrap');
+    var mixer = mixitup(containerEl);
+</script>
 </body>
 </html>

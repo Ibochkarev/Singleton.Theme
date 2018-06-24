@@ -28,6 +28,11 @@ body
 		&:required:valid
 			border-color: green
 
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
 h1, h2, h3
 	font-family: Montserrat-Black
 	color: #222328
@@ -98,5 +103,22 @@ ul>li
 			border-radius: 18px
 			background-color: #222328
 			padding: 13px 20px
+
+button.filter
+	color: #4f5362
+	font-size: 12px
+	font-weight: 300
+	text-transform: uppercase
+	letter-spacing: 1.2px
+	margin: 0 25px
+	border-color: transparent
+	outline: 0
+	&.mixitup-control-active
+		color: #ffffff
+		border-radius: 20px
+		background-color: #222328
+		padding: 13px 20px
+	&:hover
+		cursor: pointer
 
 @import "media" // Always at the end
