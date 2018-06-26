@@ -1,6 +1,8 @@
 // Section Features styles
 
-section#features-*
+section#features-1,
+section#features-2,
+section#features-3
     .section-header h2
         color: #222328
         font-size: 48px
@@ -37,6 +39,7 @@ section#features-2
         i
             margin-bottom: 20px
         h4.feature-name
+            color: #222328
             font-size: 12px
             font-weight: 400
             font-family: MontserratBlack
@@ -50,4 +53,31 @@ section#features-2
             font-weight: 400
             line-height: 24px
         
-
+section#features-3
+    .feature-item
+        .i-box
+            display: inline-block
+            width: 200px
+            height: 200px
+            text-align: center
+            border: 2px solid #a8acb9
+            border-radius: 100%
+            padding-top: 12%
+            margin-bottom: 20px
+            &:before
+                content: ''
+                display: inline-block
+                height: 100%
+                vertical-align: middle
+            a
+                margin: auto
+                text-align: center
+                vertical-align: middle 
+        h4.feature-name
+            color: #222328
+            font-family: MontserratBlack
+            font-size: 14px
+            font-weight: 400
+            line-height: 58.6px
+            text-transform: uppercase
+              
