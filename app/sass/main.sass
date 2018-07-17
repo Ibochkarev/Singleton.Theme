@@ -11,7 +11,7 @@
 
 ::selection
 	background-color: $accent
-	color: #fff
+	color: $white
 
 body
 	font-size: 16px
@@ -21,7 +21,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	background-color: #fff
+	background-color: $white
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -37,7 +37,7 @@ body
 
 h1, h2, h3
 	font-family: Montserrat-Black
-	color: #222328
+	color: $black
 
 .img-responsive
 	display: block
@@ -63,7 +63,7 @@ a
 		text-decoration: none
 
 .btn
-	color: #ffffff
+	color: $white
 	font-size: 14px
 	font-weight: 300
 	line-height: 28px
@@ -77,16 +77,16 @@ a
 	&:hover
 		color: #1f5dea
 		border: 1px solid #1f5dea
-		background-color: #fff
+		background-color: $white
 		transition: color .2s ease-out, background-color .2s ease-out, border .2s ease-out
 
 .btn-green
-	background-color: #43cb83
-	border: 1px solid #43cb83
+	background-color: $green
+	border: 1px solid $green
 	&:hover
-		border: 1px solid #43cb83
-		background-color: #fff
-		color: #43cb83
+		border: 1px solid $green
+		background-color: $white
+		color: $green
 
 .media
     display: -webkit-box
@@ -110,20 +110,20 @@ a
 ul>li
 	display: inline-block
 	a	
-		color: #4f5362
+		color: $second
 		font-size: 12px
 		font-weight: 300
 		text-transform: uppercase
 		letter-spacing: 1.2px
 		margin: 0 25px
 		&.active
-			color: #ffffff
+			color: $white
 			border-radius: 18px
-			background-color: #222328
+			background-color: $black
 			padding: 13px 20px
 
 button.filter
-	color: #4f5362
+	color: $second
 	font-size: 12px
 	font-weight: 300
 	text-transform: uppercase
@@ -132,9 +132,9 @@ button.filter
 	border-color: transparent
 	outline: 0
 	&.mixitup-control-active
-		color: #ffffff
+		color: $white
 		border-radius: 20px
-		background-color: #222328
+		background-color: $black
 		padding: 13px 20px
 	&:hover
 		cursor: pointer
