@@ -3,3 +3,10 @@ node_modules/
 app/libs/fontawesome-free/.DS_Store
 app/libs/.DS_Store
 app/libs/.DS_Store
+.idea/Singleton.Theme.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/jsLinters/jshint.xml
