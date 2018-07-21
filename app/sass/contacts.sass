@@ -12,6 +12,8 @@ section#contacts-1
 
 section#contacts-1
     .contacts-block
+        display: flex
+        align-items: stretch
         .contacts-block-body
             padding: 52px 50px
             border-radius: 10px
@@ -54,7 +56,6 @@ section#contacts-1
                 textarea
                     text-align: left
                     margin-bottom: 45px
-
             h4.feature-name
                 color: $black
                 font-size: 16px
@@ -72,3 +73,26 @@ section#contacts-1
                 margin-top: 0
                 padding-left: 15px
                 padding-right: 15px
+            .contacts-wrap
+                text-align: left
+                span
+                    display: block
+                    &.s-title
+                        color: $gray
+                        font-family: Montserrat
+                        font-size: 12px
+                        font-weight: 300
+                        line-height: 28px
+                        text-transform: uppercase
+                        letter-spacing: 1.2px
+                    &.s-descr
+                        color: $second
+                        font-family: myriadpro
+                        font-size: 18px
+                        font-weight: 400
+                        line-height: 28px
+                        margin-bottom: 35px
+                .wrap-center
+                    text-align: center
+                    a.btn
+                        text-align: center
